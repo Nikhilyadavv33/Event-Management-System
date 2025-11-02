@@ -1,0 +1,6 @@
+"event_id","event_name","event_date","venue_id","description"
+"1","Tech Expo 2025","2025-12-05","1","A showcase of emerging technologies."
+"2","Cultural Fest","2025-11-20","2","Annual inter-college fest with music and dance."
+"3","Startup Meetup","2025-12-15","3","Networking event for young entrepreneurs."
+"4","Cultural Fest","2025-11-20","3",NULL
+"5","Cultural Fest","2025-11-08","1",NULL

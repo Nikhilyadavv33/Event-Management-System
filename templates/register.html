@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Participant</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      padding: 40px;
+      margin: 0;
+    }
+    h1 {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+      text-align: center;
+    }
+    form {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #00ffff33;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      background: #2c2c2c;
+      color: #fff;
+    }
+    button {
+      width: 100%;
+      background: linear-gradient(90deg, #00ffff, #0077ff);
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      box-shadow: 0 0 10px #00ffff;
+    }
+    a {
+      color: #00ffff;
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>👩‍💻 Register Participant</h1>
+  <form method="POST" action="/register_participant">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    
+    <label>Select Event:</label>
+    <select name="event_id" required>
+      {% for event in events %}
+      <option value="{{ event[0] }}">{{ event[1] }} - {{ event[2] }}</option>
+      {% endfor %}
+    </select>
+
+    <button type="submit">Register</button>
+  </form>
+  <a href="/">⬅️ Back to Home</a>
+</body>
+</html>

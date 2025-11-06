@@ -1,10 +1,10 @@
 # 🎉 Event Management System (Database Management System)
 
 **Team Members:**  
-- 2410030131 : Sheri Vaishnavi  
-- 2410030150 : Akshitha Jonnada  
-- 2410030353 : Sakshitha Reddy
-- 2410030068 : Bharani Amoolya 
+- 2410030292 : UDAY KIRAN  
+- 2410030324 : ASHWANTH REDDY  
+- 2410030305 : NIKHIL YADAV
+- 2410030417 : ABHILASH REDDY 
 
 ---
 
